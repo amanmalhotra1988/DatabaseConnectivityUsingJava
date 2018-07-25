@@ -21,13 +21,13 @@ public static void main(String[] args) throws ClassNotFoundException, SQLExcepti
     if(Inet4Address.getLocalHost().getHostAddress().equals("172.31.21.89"))
     {
     	 m_Connection = DriverManager.getConnection(
-    	        "jdbc:sqlserver://localhost;DatabaseName=MEDarchon", "sa", "sql@123");
+    	        "jdbc:sqlserver://localhost;DatabaseName=<DBNAME>", "sa", "sql@123");
 
     }
     else
     {
     	 m_Connection = DriverManager.getConnection(
-    	        "jdbc:sqlserver://localhost;DatabaseName=MEDarchon", "sa", "sql@123");
+    	        "jdbc:sqlserver://localhost;DatabaseName=<DBNAME>", "sa", "sql@123");
 
     	//fileName = System.getProperty("user.dir") + "/testData/AutomationReport.html";
     }
